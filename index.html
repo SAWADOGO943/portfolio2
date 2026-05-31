@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAWADOGO STEVEN YOUSSOUF - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">SY</div>
+        <div class="nav-menu">
+          <a href="#accueil" class="nav-link active">Accueil</a>
+          <a href="#expertise" class="nav-link">Expertise</a>
+          <a href="#projets" class="nav-link">Projets</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="title-main">SAWADOGO STEVEN YOUSSOUF</h1>
+          <p class="subtitle">Développeur Full-Stack & Ingénieur IA</p>
+          <p class="description">
+            Architecte de solutions innovantes | Spécialiste Agents Autonomes 
+            
+          </p>
+          <div class="cta-buttons">
+            <button
+              class="btn btn-primary"
+              onclick="scrollToSection('projets')"
+            >
+              Voir mes projets
+            </button>
+            <button
+              class="btn btn-secondary"
+              onclick="scrollToSection('contact')"
+            >
+              Me contacter
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img
+              src="photo.jpeg"
+              alt="SAWADOGO STEVEN YOUSSOUF"
+              class="profile-image"
+            />
+            <div class="image-border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>↓</span>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+      <div class="container">
+        <h2>Mon Expertise</h2>
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <div class="card-icon">🤖</div>
+            <h3>Ingénierie IA & Automation</h3>
+            <p>
+              Agents autonomes • LangChain • LangGraph • Workflows n8n •
+              Architectures RAG • Prompt Engineering
+            </p>
+          </div>
+          <div class="expertise-card">
+            <div class="card-icon">💻</div>
+            <h3>Développement Full-Stack</h3>
+            <p>
+              JavaScript • Node.js • React • FastAPI • Python • Prisma ORM •
+              APIs CRUD
+            </p>
+          </div>
+          <div class="expertise-card">
+            <div class="card-icon">🔧</div>
+            <h3>Environnement & Outils</h3>
+            <p>
+              Linux (Ubuntu/Debian) • Git/GitHub • Supabase • Vector Search •
+              Web Scraping
+            </p>
+          </div>
+          
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projets">
+      <div class="container">
+        <h2>Projets Majeurs</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🏠</div>
+              <h3>Safari Real Estate AI</h3>
+            </div>
+            <p class="project-desc">
+              Système RAG pour analyse prédictive et traitement de données
+              d'investissement immobilier
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">IA</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">💼</div>
+              <h3>Safari Job AI</h3>
+            </div>
+            <p class="project-desc">
+              Agent autonome de monitoring et scraping d'offres d'emploi tech
+              avec recherche sémantique
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Agent Autonome</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Web Scraping</span>
+              <span class="tech-tag">LangChain</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">📝</div>
+              <h3>Blog Intelligent</h3>
+            </div>
+            <p class="project-desc">
+              API CRUD évolués avec recherche sémantique et système de
+              recommandation automatisée
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Recherche Sémantique</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+      <div class="container">
+        <h2>Expérience Professionnelle</h2>
+        <div class="timeline">
+          <div class="timeline-item active">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Training Manager</h3>
+              <p class="role">Code-Codeur • 2026 - Présent</p>
+              <ul>
+                <li>Encadrement et suivi de la progression des apprenants</li>
+                <li>garantir la qualité des contenus pédagogique</li>
+                <li>annimer certaines formations et webinaires</li>
+                <li>participer à la conception des suivis pédagogique</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Développeur Full-Stack & Ingénieur IA</h3>
+              <p class="role">Freelance / Projets</p>
+              <ul>
+                <li>Conception et déploiement de systèmes complexes</li>
+                <li>Architecture backend FastAPI et intégration IA</li>
+                <li>Développement d'agents autonomes et workflows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section class="formation">
+      <div class="container">
+        <h2>Formation</h2>
+        <div class="formation-grid">
+          <div class="formation-card">
+            <h3>🎓 Spécialisation en Ingénierie IA & Python</h3>
+          </div>
+          <div class="formation-card">
+            <h3>📚 Communication Marketing et Publicité</h3>
+            <p>Études Supérieures</p>
+          </div>
+          <div class="formation-card">
+            <h3>🌍 Anglais</h3>
+            <p>Cursus Universitaire - Niveau Professionnel</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Langues Section -->
+    <section class="langues">
+      <div class="container">
+        <h2>Langues</h2>
+        <div class="langues-grid">
+          <div class="langue-card">
+            <h3>Français</h3>
+            <p class="niveau">Langue Maternelle</p>
+            <div class="proficiency-bar">
+              <div class="proficiency-fill" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="langue-card">
+            <h3>Anglais</h3>
+            <p class="niveau">Niveau Universitaire / Professionnel</p>
+            <div class="proficiency-bar">
+              <div class="proficiency-fill" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Travaillons Ensemble</h2>
+        <p class="contact-intro">
+          Vous avez un projet, une collaboration ou une question ? Contactez-moi
+          !
+        </p>
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <p>Abidjan, Côte d'Ivoire</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">💼</div>
+            <p>Disponible pour missions</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">�</div>
+            <p>
+              <a href="mailto:stevenyoussoufs@gmail.com" class="contact-link"
+                >stevenyoussoufs@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/sawadogo-steven-youssouf-1616421b7"
+            target="_blank"
+            class="social-btn linkedin"
+            title="LinkedIn"
+          >
+            <span>💼</span> LinkedIn
+          </a>
+          <a
+            href="https://github.com/SAWADOGO943"
+            target="_blank"
+            class="social-btn github"
+            title="GitHub"
+          >
+            <span>💻</span> GitHub
+          </a>
+          <a
+            href="https://wa.me/2250749359176"
+            target="_blank"
+            class="social-btn whatsapp"
+            title="WhatsApp"
+          >
+            <span>💬</span> WhatsApp
+          </a>
+          <a
+            href="mailto:stevenyoussoufs@gmail.com"
+            class="social-btn email"
+            title="Email"
+          >
+            <span>📧</span> Email
+          </a>
+        </div>
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <input type="text" placeholder="Votre nom" required />
+          <input type="email" placeholder="Votre email" required />
+          <textarea placeholder="Votre message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 SAWADOGO STEVEN YOUSSOUF. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#accueil">Haut</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

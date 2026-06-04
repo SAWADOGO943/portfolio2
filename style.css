@@ -141,6 +141,20 @@ body {
     width: 100%;
 }
 
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 912px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+}
+
 .hero-text h1 {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1.2;
@@ -174,6 +188,13 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+@media (max-width: 912px) {
+    .cta-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 }
 
 .btn {
@@ -220,8 +241,15 @@ body {
 
 .image-wrapper {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: clamp(200px, 40vw, 350px);
+    height: clamp(200px, 40vw, 350px);
+}
+
+@media (max-width: 1024px) {
+    .image-wrapper {
+        width: 280px;
+        height: 280px;
+    }
 }
 
 .profile-image {
@@ -682,6 +710,20 @@ section h2 {
     gap: 1rem;
 }
 
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 100%;
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 100%;
+        gap: 0.7rem;
+    }
+}
+
 .contact-form input,
 .contact-form textarea {
     padding: 1rem;
@@ -720,6 +762,21 @@ section h2 {
     margin: 3rem auto 0;
     padding-top: 2rem;
     border-top: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+@media (max-width: 912px) {
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 1rem;
+    }
 }
 
 .social-btn {
@@ -815,6 +872,32 @@ section h2 {
 /* ==================== RESPONSIVE ==================== */
 
 /* Tablettes (768px et moins) */
+@media (max-width: 912px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0.8rem 0;
@@ -859,7 +942,7 @@ section h2 {
 
     .hero {
         margin-top: 70px;
-        padding: 4rem 1.5rem;
+        padding: 3rem 1.5rem;
         min-height: auto;
     }
 
@@ -873,16 +956,16 @@ section h2 {
     }
 
     .subtitle {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .description {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .image-wrapper {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 250px;
         margin: 0 auto;
     }
 
@@ -895,7 +978,15 @@ section h2 {
     }
 
     section {
-        padding: 3.5rem 1.5rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     section h2 {

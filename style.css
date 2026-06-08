@@ -440,6 +440,42 @@ section h2 {
     font-size: 2.5rem;
 }
 
+/* Specific project icon styles */
+.project-icon.whatsapp-icon,
+.project-icon.rag-icon,
+.project-icon.scraper-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    transition: var(--transition);
+}
+
+.project-icon.whatsapp-icon {
+    color: #25d366;
+    background: rgba(37, 211, 102, 0.06);
+}
+
+.project-icon.rag-icon {
+    color: #ffd166;
+    background: rgba(255, 209, 102, 0.06);
+}
+
+.project-icon.scraper-icon {
+    color: #ff8c00;
+    background: rgba(255, 140, 0, 0.06);
+}
+
+.project-icon.whatsapp-icon:hover,
+.project-icon.rag-icon:hover,
+.project-icon.scraper-icon:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
 .project-header h3 {
     color: var(--primary-color);
     font-size: 1.3rem;
